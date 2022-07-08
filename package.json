@@ -22,5 +22,8 @@
   "dependencies": {
     "mysql": "^2.18.1",
     "sanitize-html": "^1.18.2"
+  },
+  "devDependencies": {
+    "express-session": "^1.17.3"
   }
 }

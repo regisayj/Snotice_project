@@ -13,11 +13,12 @@ var app = http.createServer(function(request,response){
     var pathname = url.parse(_url, true).pathname;
     if(pathname === '/'){
       if(queryData.id === undefined){
-    } else {
+        topic.home(request,response);
 
+    } else {
+      
       topic.page(request, response);
       }
-
     } else if(pathname === '/create'){
 
       topic.create(request, response);
@@ -39,6 +40,22 @@ var app = http.createServer(function(request,response){
     } else if(pathname === '/delete_process'){
 
       topic.delete_process(request,response);
+      
+    }else if(pathname === '/signup'){
+
+      topic.signup(request,response);
+      
+    }else if(pathname === '/signup_process'){
+
+      topic.signup_process(request,response);
+      
+    }else if(pathname === '/login'){
+
+      topic.login(request,response);
+      
+    }else if(pathname === '/login_process'){
+
+      topic.login_process(request,response);
       
     }else if(pathname === '/author'){
 
