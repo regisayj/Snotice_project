@@ -16,8 +16,9 @@ var app = http.createServer(function(request,response){
         topic.home(request,response);
 
     } else {
-      
+
       topic.page(request, response);
+      
       }
     } else if(pathname === '/create'){
 
