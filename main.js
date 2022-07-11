@@ -54,6 +54,10 @@ var app = http.createServer(function(request,response){
 
       topic.login(request,response);
       
+    }else if(pathname === '/paging'){
+
+      topic.paging(request,response);
+      
     }else if(pathname === '/login_process'){
 
       topic.login_process(request,response);
