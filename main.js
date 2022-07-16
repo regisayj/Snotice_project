@@ -6,6 +6,7 @@ var db = require('./lib/db');
 var topic = require('./lib/topic');
 var author = require('./lib/author');
 
+
 //メインページ
 var app = http.createServer(function(request,response){
     var _url = request.url;
@@ -87,5 +88,6 @@ var app = http.createServer(function(request,response){
       response.end('Not found');
     }
 });
+
 
 app.listen(3000);
