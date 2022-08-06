@@ -29,11 +29,22 @@ var app = http.createServer(function(request,response){
       
       topic.create_process(request,response);
 
+    //修正
+    }else if(pathname === '/updatepage'){
+
+      topic.updatepage(request,response);
+
+    
+    }else if(pathname === '/updatepage_process'){
+
+      topic.updatepage_process(request,response);
+
+    
     } else if(pathname === '/update'){
 
       topic.update(request,response);
 
-    //修正
+    
     } else if(pathname === '/update_process'){
 
       topic.update_process(request,response);
